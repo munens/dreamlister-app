@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5ADAABE1ED390AC00DD2751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAABD1ED390AC00DD2751 /* AppDelegate.swift */; };
+		C5ADAAC01ED390AC00DD2751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAABF1ED390AC00DD2751 /* ViewController.swift */; };
+		C5ADAAC31ED390AC00DD2751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5ADAAC11ED390AC00DD2751 /* Main.storyboard */; };
+		C5ADAAC61ED390AC00DD2751 /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAAC41ED390AC00DD2751 /* DreamLister.xcdatamodeld */; };
+		C5ADAAC81ED390AC00DD2751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5ADAAC71ED390AC00DD2751 /* Assets.xcassets */; };
+		C5ADAACB1ED390AC00DD2751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5ADAAC91ED390AC00DD2751 /* LaunchScreen.storyboard */; };
+		C5ADAAD61ED390AC00DD2751 /* DreamListerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAAD51ED390AC00DD2751 /* DreamListerTests.swift */; };
+		C5ADAAE11ED390AC00DD2751 /* DreamListerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAAE01ED390AC00DD2751 /* DreamListerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5ADAAD21ED390AC00DD2751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5ADAAB21ED390AC00DD2751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5ADAAB91ED390AC00DD2751;
+			remoteInfo = DreamLister;
+		};
+		C5ADAADD1ED390AC00DD2751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5ADAAB21ED390AC00DD2751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5ADAAB91ED390AC00DD2751;
+			remoteInfo = DreamLister;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C5ADAABA1ED390AC00DD2751 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5ADAABD1ED390AC00DD2751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5ADAABF1ED390AC00DD2751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5ADAAC21ED390AC00DD2751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5ADAAC51ED390AC00DD2751 /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
+		C5ADAAC71ED390AC00DD2751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5ADAACA1ED390AC00DD2751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5ADAACC1ED390AC00DD2751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5ADAAD11ED390AC00DD2751 /* DreamListerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamListerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5ADAAD51ED390AC00DD2751 /* DreamListerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListerTests.swift; sourceTree = "<group>"; };
+		C5ADAAD71ED390AC00DD2751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5ADAADC1ED390AC00DD2751 /* DreamListerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamListerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5ADAAE01ED390AC00DD2751 /* DreamListerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListerUITests.swift; sourceTree = "<group>"; };
+		C5ADAAE21ED390AC00DD2751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5ADAAB71ED390AC00DD2751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADAACE1ED390AC00DD2751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADAAD91ED390AC00DD2751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5ADAAB11ED390AC00DD2751 = {
+			isa = PBXGroup;
+			children = (
+				C5ADAABC1ED390AC00DD2751 /* DreamLister */,
+				C5ADAAD41ED390AC00DD2751 /* DreamListerTests */,
+				C5ADAADF1ED390AC00DD2751 /* DreamListerUITests */,
+				C5ADAABB1ED390AC00DD2751 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5ADAABB1ED390AC00DD2751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADAABA1ED390AC00DD2751 /* DreamLister.app */,
+				C5ADAAD11ED390AC00DD2751 /* DreamListerTests.xctest */,
+				C5ADAADC1ED390AC00DD2751 /* DreamListerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5ADAABC1ED390AC00DD2751 /* DreamLister */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADAABD1ED390AC00DD2751 /* AppDelegate.swift */,
+				C5ADAABF1ED390AC00DD2751 /* ViewController.swift */,
+				C5ADAAC11ED390AC00DD2751 /* Main.storyboard */,
+				C5ADAAC71ED390AC00DD2751 /* Assets.xcassets */,
+				C5ADAAC91ED390AC00DD2751 /* LaunchScreen.storyboard */,
+				C5ADAACC1ED390AC00DD2751 /* Info.plist */,
+				C5ADAAC41ED390AC00DD2751 /* DreamLister.xcdatamodeld */,
+			);
+			path = DreamLister;
+			sourceTree = "<group>";
+		};
+		C5ADAAD41ED390AC00DD2751 /* DreamListerTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADAAD51ED390AC00DD2751 /* DreamListerTests.swift */,
+				C5ADAAD71ED390AC00DD2751 /* Info.plist */,
+			);
+			path = DreamListerTests;
+			sourceTree = "<group>";
+		};
+		C5ADAADF1ED390AC00DD2751 /* DreamListerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5ADAAE01ED390AC00DD2751 /* DreamListerUITests.swift */,
+				C5ADAAE21ED390AC00DD2751 /* Info.plist */,
+			);
+			path = DreamListerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5ADAAB91ED390AC00DD2751 /* DreamLister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5ADAAE51ED390AC00DD2751 /* Build configuration list for PBXNativeTarget "DreamLister" */;
+			buildPhases = (
+				C5ADAAB61ED390AC00DD2751 /* Sources */,
+				C5ADAAB71ED390AC00DD2751 /* Frameworks */,
+				C5ADAAB81ED390AC00DD2751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DreamLister;
+			productName = DreamLister;
+			productReference = C5ADAABA1ED390AC00DD2751 /* DreamLister.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5ADAAD01ED390AC00DD2751 /* DreamListerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5ADAAE81ED390AC00DD2751 /* Build configuration list for PBXNativeTarget "DreamListerTests" */;
+			buildPhases = (
+				C5ADAACD1ED390AC00DD2751 /* Sources */,
+				C5ADAACE1ED390AC00DD2751 /* Frameworks */,
+				C5ADAACF1ED390AC00DD2751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5ADAAD31ED390AC00DD2751 /* PBXTargetDependency */,
+			);
+			name = DreamListerTests;
+			productName = DreamListerTests;
+			productReference = C5ADAAD11ED390AC00DD2751 /* DreamListerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5ADAADB1ED390AC00DD2751 /* DreamListerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5ADAAEB1ED390AC00DD2751 /* Build configuration list for PBXNativeTarget "DreamListerUITests" */;
+			buildPhases = (
+				C5ADAAD81ED390AC00DD2751 /* Sources */,
+				C5ADAAD91ED390AC00DD2751 /* Frameworks */,
+				C5ADAADA1ED390AC00DD2751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5ADAADE1ED390AC00DD2751 /* PBXTargetDependency */,
+			);
+			name = DreamListerUITests;
+			productName = DreamListerUITests;
+			productReference = C5ADAADC1ED390AC00DD2751 /* DreamListerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5ADAAB21ED390AC00DD2751 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Munene Kaumbutho";
+				TargetAttributes = {
+					C5ADAAB91ED390AC00DD2751 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					C5ADAAD01ED390AC00DD2751 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C5ADAAB91ED390AC00DD2751;
+					};
+					C5ADAADB1ED390AC00DD2751 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C5ADAAB91ED390AC00DD2751;
+					};
+				};
+			};
+			buildConfigurationList = C5ADAAB51ED390AC00DD2751 /* Build configuration list for PBXProject "DreamLister" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5ADAAB11ED390AC00DD2751;
+			productRefGroup = C5ADAABB1ED390AC00DD2751 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5ADAAB91ED390AC00DD2751 /* DreamLister */,
+				C5ADAAD01ED390AC00DD2751 /* DreamListerTests */,
+				C5ADAADB1ED390AC00DD2751 /* DreamListerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5ADAAB81ED390AC00DD2751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5ADAACB1ED390AC00DD2751 /* LaunchScreen.storyboard in Resources */,
+				C5ADAAC81ED390AC00DD2751 /* Assets.xcassets in Resources */,
+				C5ADAAC31ED390AC00DD2751 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADAACF1ED390AC00DD2751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADAADA1ED390AC00DD2751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5ADAAB61ED390AC00DD2751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5ADAAC01ED390AC00DD2751 /* ViewController.swift in Sources */,
+				C5ADAABE1ED390AC00DD2751 /* AppDelegate.swift in Sources */,
+				C5ADAAC61ED390AC00DD2751 /* DreamLister.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADAACD1ED390AC00DD2751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5ADAAD61ED390AC00DD2751 /* DreamListerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5ADAAD81ED390AC00DD2751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5ADAAE11ED390AC00DD2751 /* DreamListerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5ADAAD31ED390AC00DD2751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5ADAAB91ED390AC00DD2751 /* DreamLister */;
+			targetProxy = C5ADAAD21ED390AC00DD2751 /* PBXContainerItemProxy */;
+		};
+		C5ADAADE1ED390AC00DD2751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5ADAAB91ED390AC00DD2751 /* DreamLister */;
+			targetProxy = C5ADAADD1ED390AC00DD2751 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5ADAAC11ED390AC00DD2751 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5ADAAC21ED390AC00DD2751 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5ADAAC91ED390AC00DD2751 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5ADAACA1ED390AC00DD2751 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5ADAAE31ED390AC00DD2751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C5ADAAE41ED390AC00DD2751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5ADAAE61ED390AC00DD2751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DreamLister/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = munesh.DreamLister;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C5ADAAE71ED390AC00DD2751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DreamLister/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = munesh.DreamLister;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C5ADAAE91ED390AC00DD2751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DreamListerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = munesh.DreamListerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamLister.app/DreamLister";
+			};
+			name = Debug;
+		};
+		C5ADAAEA1ED390AC00DD2751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DreamListerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = munesh.DreamListerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamLister.app/DreamLister";
+			};
+			name = Release;
+		};
+		C5ADAAEC1ED390AC00DD2751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DreamListerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = munesh.DreamListerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DreamLister;
+			};
+			name = Debug;
+		};
+		C5ADAAED1ED390AC00DD2751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = DreamListerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = munesh.DreamListerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DreamLister;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5ADAAB51ED390AC00DD2751 /* Build configuration list for PBXProject "DreamLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5ADAAE31ED390AC00DD2751 /* Debug */,
+				C5ADAAE41ED390AC00DD2751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5ADAAE51ED390AC00DD2751 /* Build configuration list for PBXNativeTarget "DreamLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5ADAAE61ED390AC00DD2751 /* Debug */,
+				C5ADAAE71ED390AC00DD2751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C5ADAAE81ED390AC00DD2751 /* Build configuration list for PBXNativeTarget "DreamListerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5ADAAE91ED390AC00DD2751 /* Debug */,
+				C5ADAAEA1ED390AC00DD2751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C5ADAAEB1ED390AC00DD2751 /* Build configuration list for PBXNativeTarget "DreamListerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5ADAAEC1ED390AC00DD2751 /* Debug */,
+				C5ADAAED1ED390AC00DD2751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C5ADAAC41ED390AC00DD2751 /* DreamLister.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C5ADAAC51ED390AC00DD2751 /* DreamLister.xcdatamodel */,
+			);
+			currentVersion = C5ADAAC51ED390AC00DD2751 /* DreamLister.xcdatamodel */;
+			path = DreamLister.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C5ADAAB21ED390AC00DD2751 /* Project object */;
+}
