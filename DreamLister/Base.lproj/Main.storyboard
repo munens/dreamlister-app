@@ -13,7 +13,7 @@
         <!--DreamLister-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainVC" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="DreamLister" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -35,7 +35,7 @@
                                 <rect key="frame" x="16" y="112" width="343" height="555"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="154" id="EOR-Cu-Xhg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="154" id="EOR-Cu-Xhg" customClass="ItemCell" customModule="DreamLister" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="154"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EOR-Cu-Xhg" id="RW3-3I-aL8">
@@ -102,6 +102,12 @@
                                                 <constraint firstAttribute="trailing" secondItem="SgE-oN-YBn" secondAttribute="trailing" constant="8" id="Kdy-Kw-Jyp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="details" destination="WMT-LM-DZi" id="hdP-s4-TbT"/>
+                                            <outlet property="price" destination="4ds-KS-2sU" id="lif-NO-WYz"/>
+                                            <outlet property="thumb" destination="yw9-bZ-PSS" id="cOT-V7-FiG"/>
+                                            <outlet property="title" destination="KyQ-LU-Shd" id="NNf-7k-LZ8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -122,6 +128,10 @@
                             <color key="tintColor" red="0.072335025380000001" green="0.072335025380000001" blue="0.072335025380000001" alpha="0.62778253419999996" colorSpace="custom" customColorSpace="displayP3"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segment" destination="zPE-QU-u7p" id="7hA-S9-QKr"/>
+                        <outlet property="tableView" destination="lZP-xF-mb1" id="jcE-HO-dxG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,7 +142,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="97v-kX-nHZ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="u6P-dv-qrs">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="u6P-dv-qrs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

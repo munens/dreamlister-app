@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C5ADAABE1ED390AC00DD2751 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAABD1ED390AC00DD2751 /* AppDelegate.swift */; };
-		C5ADAAC01ED390AC00DD2751 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAABF1ED390AC00DD2751 /* ViewController.swift */; };
+		C5ADAAC01ED390AC00DD2751 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAABF1ED390AC00DD2751 /* MainVC.swift */; };
 		C5ADAAC31ED390AC00DD2751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5ADAAC11ED390AC00DD2751 /* Main.storyboard */; };
 		C5ADAAC61ED390AC00DD2751 /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAAC41ED390AC00DD2751 /* DreamLister.xcdatamodeld */; };
 		C5ADAAC81ED390AC00DD2751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5ADAAC71ED390AC00DD2751 /* Assets.xcassets */; };
@@ -24,6 +24,7 @@
 		C5ADAB0E1ED39E8700DD2751 /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAB061ED39E8700DD2751 /* Item+CoreDataClass.swift */; };
 		C5ADAB0F1ED39E8700DD2751 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAB071ED39E8700DD2751 /* Item+CoreDataProperties.swift */; };
 		C5ADAB121ED3AC9700DD2751 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAB111ED3AC9700DD2751 /* MaterialView.swift */; };
+		C5ADAB141ED3B39A00DD2751 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5ADAB131ED3B39A00DD2751 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,7 @@
 /* Begin PBXFileReference section */
 		C5ADAABA1ED390AC00DD2751 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5ADAABD1ED390AC00DD2751 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5ADAABF1ED390AC00DD2751 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5ADAABF1ED390AC00DD2751 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C5ADAAC21ED390AC00DD2751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C5ADAAC51ED390AC00DD2751 /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
 		C5ADAAC71ED390AC00DD2751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +68,7 @@
 		C5ADAB061ED39E8700DD2751 /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
 		C5ADAB071ED39E8700DD2751 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		C5ADAB111ED3AC9700DD2751 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		C5ADAB131ED3B39A00DD2751 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +122,7 @@
 				C5ADAB101ED3AC6D00DD2751 /* View */,
 				C5ADAAFE1ED39AFC00DD2751 /* Model */,
 				C5ADAABD1ED390AC00DD2751 /* AppDelegate.swift */,
-				C5ADAABF1ED390AC00DD2751 /* ViewController.swift */,
+				C5ADAABF1ED390AC00DD2751 /* MainVC.swift */,
 				C5ADAAC11ED390AC00DD2751 /* Main.storyboard */,
 				C5ADAAC71ED390AC00DD2751 /* Assets.xcassets */,
 				C5ADAAC91ED390AC00DD2751 /* LaunchScreen.storyboard */,
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				C5ADAB111ED3AC9700DD2751 /* MaterialView.swift */,
+				C5ADAB131ED3B39A00DD2751 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -313,12 +316,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5ADAB141ED3B39A00DD2751 /* ItemCell.swift in Sources */,
 				C5ADAB0E1ED39E8700DD2751 /* Item+CoreDataClass.swift in Sources */,
 				C5ADAB121ED3AC9700DD2751 /* MaterialView.swift in Sources */,
 				C5ADAB0D1ED39E8700DD2751 /* Image+CoreDataProperties.swift in Sources */,
 				C5ADAB0A1ED39E8700DD2751 /* ItemType+CoreDataClass.swift in Sources */,
 				C5ADAB091ED39E8700DD2751 /* Store+CoreDataProperties.swift in Sources */,
-				C5ADAAC01ED390AC00DD2751 /* ViewController.swift in Sources */,
+				C5ADAAC01ED390AC00DD2751 /* MainVC.swift in Sources */,
 				C5ADAB0C1ED39E8700DD2751 /* Image+CoreDataClass.swift in Sources */,
 				C5ADAB081ED39E8700DD2751 /* Store+CoreDataClass.swift in Sources */,
 				C5ADAABE1ED390AC00DD2751 /* AppDelegate.swift in Sources */,
