@@ -91,3 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+// have the ability to access the appDelegate and the container as global objects. We can then user them in our controllers, classes etc.
+let ad = UIApplication.shared.delegate as! AppDelegate
+let context = ad.persistentContainer.viewContext
+
