@@ -95,5 +95,34 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
             // handle error:
         }
     }
+    
+    @IBAction func savePressed(_ sender: Any) {
+        let item = Item(context: context)
+        
+        if let title = titleField.text {
+            
+            item.title = title
+        }
+        
+        if let price = priceField.text {
+            
+            item.price = (price as NSString).doubleValue
+        }
+        
+        if let details = detailsField.text {
+            
+            item.details = details
+        }
+        
+        // recall that an Item has a store and a store has many items as created in the DB: - therefore we can give an item a srore by doing the following:
+        item.toStore = stores[storePicker.selectedRow(inComponent: 0)] // user storePicer to get the store we want. We only have one of them so we use 0.
+        
+        ad.saveContext()
+        
+        // how to go to the previous controller:
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
+    
 
 }

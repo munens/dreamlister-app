@@ -81,6 +81,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
         
+        // need to give controller a delegate so that all controllerWillChangeContext, controllerDidChangeContent methods know which controller they are supposed to deal with:
+        controller.delegate = self
+        
         // set controller on outside to the one here:
         self.controller = controller
         
@@ -160,6 +163,8 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         
         // calling this will add the above to the database when we run the app the first time. If we run the app again it will save everything again!
         ad.saveContext()
+        
+        
     }
     
     

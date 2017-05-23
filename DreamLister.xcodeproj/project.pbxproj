@@ -127,7 +127,6 @@
 				C5ADAB101ED3AC6D00DD2751 /* View */,
 				C5ADAAFE1ED39AFC00DD2751 /* Model */,
 				C5ADAABD1ED390AC00DD2751 /* AppDelegate.swift */,
-				C5ADAABF1ED390AC00DD2751 /* MainVC.swift */,
 				C5ADAAC11ED390AC00DD2751 /* Main.storyboard */,
 				C5ADAAC71ED390AC00DD2751 /* Assets.xcassets */,
 				C5ADAAC91ED390AC00DD2751 /* LaunchScreen.storyboard */,
@@ -191,6 +190,7 @@
 		C5B3D6E11ED4DD1E0004CE95 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C5ADAABF1ED390AC00DD2751 /* MainVC.swift */,
 				C5B3D6E61ED4E4510004CE95 /* ItemDetailsVC.swift */,
 			);
 			name = Controllers;
