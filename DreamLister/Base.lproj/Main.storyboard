@@ -110,7 +110,6 @@
                                             <outlet property="price" destination="4ds-KS-2sU" id="lif-NO-WYz"/>
                                             <outlet property="thumb" destination="yw9-bZ-PSS" id="cOT-V7-FiG"/>
                                             <outlet property="title" destination="KyQ-LU-Shd" id="NNf-7k-LZ8"/>
-                                            <segue destination="9Gi-6q-C5W" kind="show" identifier="ItemDetailsVCNew" id="Vph-5V-UUF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -130,12 +129,15 @@
                     <navigationItem key="navigationItem" title="DreamLister" id="pf5-02-zl6">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="i30-Xb-fSA">
                             <color key="tintColor" red="0.072335025380000001" green="0.072335025380000001" blue="0.072335025380000001" alpha="0.62778253419999996" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="9Gi-6q-C5W" kind="show" identifier="ItemDetailsVC" id="zzU-Nn-vBU"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="segment" destination="zPE-QU-u7p" id="7hA-S9-QKr"/>
                         <outlet property="tableView" destination="lZP-xF-mb1" id="jcE-HO-dxG"/>
-                        <segue destination="9Gi-6q-C5W" kind="show" identifier="ItemDetailsVC" id="M6L-2I-RA4"/>
+                        <segue destination="9Gi-6q-C5W" kind="show" identifier="ItemDetailsVCNew" id="M6L-2I-RA4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -313,6 +315,6 @@
         <image name="maxresdefault" width="1920" height="1080"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Vph-5V-UUF"/>
+        <segue reference="zzU-Nn-vBU"/>
     </inferredMetricsTieBreakers>
 </document>

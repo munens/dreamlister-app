@@ -17,6 +17,7 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet weak var detailsField: CustomTextField!
     
     var stores = [Store]()
+    var itemToEdit: Item?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,7 +50,9 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
          */
         getStores()
         
-    
+        if itemToEdit != nil {
+            loadItemData()
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,7 +100,18 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     }
     
     @IBAction func savePressed(_ sender: Any) {
-        let item = Item(context: context)
+        
+        var item: Item!
+        
+        if itemToEdit == nil {
+        
+            item = Item(context: context)
+            
+        } else {
+            
+            item = itemToEdit
+        }
+        
         
         if let title = titleField.text {
             
@@ -123,6 +137,30 @@ class ItemDetailsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
         _ = navigationController?.popViewController(animated: true)
     }
     
+    
+    // going to create a function below that loads item data for editting:
+    func loadItemData(){
+        
+        if let item = itemToEdit {
+            
+            titleField.text = item.title
+            priceField.text = "\(item.price)"
+            detailsField.text = item.details
+            
+            // an item will have many stores. Therefore we need to pick the correct store for the item we choose to edit - we want the picker to take this value. the reeat while loop below will find this value for us, by comparing the store that the current item has matches one the sotres in the list of them: - if so then the storePicker can retreive the correct row.
+            if let store = item.toStore {
+                var index = 0
+                repeat {
+                    let s = stores[index]
+                    if s.name == store.name {
+                        storePicker.selectRow(index, inComponent: 0, animated: false)
+                        break
+                    }
+                    index += 1
+                } while (index < stores.count)
+            }
+        }
+    }
     
 
 }
